@@ -8,8 +8,16 @@ export const Container = styled.div`
     grid-template-rows: 105px auto;
     grid-template-areas: 
     "header"
-    "content";
-
+    "content";    
+    
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: ${({theme}) => theme.COLORS.PINK};
+        border-radius: 10px;
+    }    
     
 `;
 
@@ -25,12 +33,16 @@ export const Arrow = styled.button`
 `;
 
 export const Content = styled.div`
-    width: 100%;
-    height: 100vh;
+    
 
     display: flex;
     flex-direction: column;
     margin: 40px 120px;
+    overflow: auto;
+
+    
+
+    
 
     > div {
         display: flex;
@@ -49,5 +61,57 @@ export const Content = styled.div`
         margin-top: 24px;
         color: ${({theme}) => theme.COLORS.WHITE_2};
     }
+`;
 
+export const Stars = styled.button`
+
+    border: none;
+    background: none;
+    color: ${({theme}) => theme.COLORS.PINK};
+    font-size: 22px;
+    margin-top: 38px;
+    margin-left: 19px;
+    display: flex;
+    gap: 10px;
+
+`;
+
+export const RatingTime = styled.div`
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+
+    margin-top: 24px;
+    font-size: 16px;
+
+    > img {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+    }
+
+    > svg {
+        color: ${({theme}) => theme.COLORS.PINK};
+        font-size: 22px;
+        justify-content: center ;
+    }
+`;
+
+export const Genres = styled.div`
+    margin-top: 40px;
+`;
+
+export const Description = styled.div`
+    width: 100%;
+    height: 100vh;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 40px;
+    
+    p {
+        
+        text-align: justify;
+    }
+    
 `;
