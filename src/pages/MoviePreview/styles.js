@@ -23,12 +23,13 @@ export const Container = styled.div`
 
 export const Arrow = styled.button`
     border: none;
-    background: none;
-
-    > svg {
-        color: ${({theme}) => theme.COLORS.PINK};
+    background: none;  
+    display: flex;
+    align-items: center;
+    color: ${({theme}) => theme.COLORS.PINK}; 
+    
+    svg {
         font-size: 22px;
-        justify-content: center ;
     }
 `;
 
@@ -40,27 +41,25 @@ export const Content = styled.div`
     margin: 40px 120px;
     overflow: auto;
 
-    
-
-    
-
     > div {
         display: flex;
         flex-direction: row;
-        text-align: center;
+
+        
     }
 
     a {
         font-size: 16px;
         font-weight: 500;
         text-decoration: none;
-        color: ${({theme}) => theme.COLORS.PINK};       
+        color: ${({theme}) => theme.COLORS.PINK};
     }
 
     h1 {
         margin-top: 24px;
         color: ${({theme}) => theme.COLORS.WHITE_2};
     }
+
 `;
 
 export const Stars = styled.button`

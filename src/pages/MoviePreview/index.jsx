@@ -11,12 +11,12 @@ export function MoviePreview() {
         <Container>
             <Header/>
             <Content>
-                <div>
-                    <Arrow>
-                        <BsArrowLeftShort/>
-                    </Arrow>
-                    <a href="/">Voltar</a>
-                </div>                
+                <Arrow>
+                    <BsArrowLeftShort/>
+                    <a href="/">                    
+                        Voltar
+                    </a>
+                </Arrow>                
                 
                 <div>
 
