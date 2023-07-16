@@ -50,10 +50,6 @@ export function MoviePreview() {
                 </Description>
 
             </Content>
-                
-
-            
-
         </Container>
     );
 }

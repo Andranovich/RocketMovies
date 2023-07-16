@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+
 
 export const Container = styled.header`
     grid-area: header;
@@ -42,10 +44,9 @@ export const Container = styled.header`
 
     `;
 
-export const Profile = styled.div`
+export const Profile = styled(Link)`
     display: flex;
     align-items: center;
-
 
     > img {
         width: 56px;
@@ -58,11 +59,10 @@ export const Profile = styled.div`
         flex-direction: column;
         line-height: 24px;
         width: 125px;
+        text-align: end;
+        margin-right: 9px;
         
-      span {
-        font-size: 14px;
-        color: ${({theme}) => theme.COLORS.GRAY_300};
-      }
+      
 
       strong {
         font-size: 14px;
@@ -71,5 +71,10 @@ export const Profile = styled.div`
       }
     }
 
+`;
+
+export const Logout = styled(Link)`
+    font-size: 14px;
+        color: ${({theme}) => theme.COLORS.GRAY_300};
 `;
 

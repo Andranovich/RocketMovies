@@ -23,7 +23,7 @@ export const Container = styled.div`
 
 export const Arrow = styled.button`
     border: none;
-    background: none;  
+    background: none;
     display: flex;
     align-items: center;
     color: ${({theme}) => theme.COLORS.PINK}; 
@@ -33,8 +33,7 @@ export const Arrow = styled.button`
     }
 `;
 
-export const Content = styled.div`
-    
+export const Content = styled.div`    
 
     display: flex;
     flex-direction: column;
